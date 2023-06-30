@@ -40,13 +40,12 @@ The Stock Exchange of Thailand Index (TH) - ^SET.BK:
 
 - รายละเอียด: ดัชนี The Stock Exchange of Thailand (SET) เป็นดัชนีที่วัดผลกระทบของบริษัทในตลาดหลักของประเทศไทย
 - การผันผวน: ช่วงเวลาดังกล่าวเป็นช่วงที่ตลาดหลักของไทยมีการเติบโตและความผันผวน โดยเฉพาะในช่วงหลังวิกฤตการเงินในยุโรปในปี 2008 และความเสี่ยงทางการเมืองในประเทศ
-
+  
 # Average True Range
 
-- ATR (Average True Range)เป็นตัวบ่งชี้ความผันผวนของการวิเคราะห์ทางเทคนิคที่พัฒนาโดย J. Welles Wilder
-  
-![Untitled (5)](https://github.com/misterrobot01/market_index_analysis/assets/89926761/edce32a3-5c9c-44af-a390-512068d4430c)
+- ATR (Average True Range) เป็นตัวบ่งชี้ความผันผวนของการวิเคราะห์ทางเทคนิคที่พัฒนาโดย J. Welles Wilder
 
+![Untitled (5)](https://github.com/misterrobot01/market_index_analysis/assets/89926761/edce32a3-5c9c-44af-a390-512068d4430c)
 
 **ตัวอย่าง** **A** : ราคาสูงสุดปัจจุบัน > ราคาสูงสุดวันก่อนหน้า และ ราคาต่ำสุดปัจจุบัน < ราคาต่ำสุดวันก่อนหน้า … ใช้ High-Low ระหว่างแท่งปัจจุบัน เป็น True range
 
@@ -65,10 +64,6 @@ The Stock Exchange of Thailand Index (TH) - ^SET.BK:
 
 ![Untitled (6)](https://github.com/misterrobot01/market_index_analysis/assets/89926761/c82c1632-7cf3-4350-a353-1937c5adcf47)
 
-
-**ATR (Average true range)**
-
-- เป็นตัวบ่งชี้ความผันผวนของการวิเคราะห์ทางเทคนิคที่พัฒนาโดย J. Welles Wilder
 
 **สูตรการคำนวณ** **ATR (Average true range)**
 
