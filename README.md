@@ -2,6 +2,158 @@
 
 # Introduction
 
+S&P 500 Index (US) - ^GSPC:
+
+- รายละเอียด: S&P 500 เป็นดัชนีที่วัดผลกระทบของบริษัทใหญ่ที่มีการซื้อขายในตลาดหลักของสหรัฐอเมริกา ประกอบด้วยบริษัทมากกว่า 500 แห่ง
+- การผันผวน: ช่วงเวลาดังกล่าวเป็นช่วงที่เกิดเหตุการณ์สำคัญอย่างสิ้นเชิง ทั้งวิกฤตการเงินในปี 2008 และโรคติดเชื้อโควิด-19 ในปี 2020 ทำให้เกิดความผันผวนในตลาดหลัก อย่างไรก็ตาม ดัชนี S&P 500 มีความเสถียรและเติบโตขึ้นในระยะยาว
+
+NASDAQ Composite Index (US) - ^IXIC:
+
+- รายละเอียด: NASDAQ Composite เป็นดัชนีที่วัดผลกระทบของบริษัทเทคโนโลยีและบริษัทใหญ่ในตลาดหลักของสหรัฐอเมริกา
+- การผันผวน: ดัชนี NASDAQ Composite เป็นที่รู้จักกันดีในการลงทุนในหลายกลุ่มอุตสาหกรรม เช่น เทคโนโลยีสารสนเทศ ดัชนีนี้มีความผันผวนที่สูงกว่า S&P 500 Index โดยเฉพาะในช่วงเวลาตอนท้ายทศวรรษที่ผ่านมา
+
+FTSE 100 Index (EU) - ^FTSE:
+
+- รายละเอียด: FTSE 100 เป็นดัชนีที่วัดผลกระทบของบริษัทใหญ่ที่มีการซื้อขายในตลาดหลักของสหราชอาณาจักร ประกอบด้วยบริษัทที่มีส่วนแบ่งในตลาดสูงสุดในสหราชอาณาจักร
+- การผันผวน: ดัชนี FTSE 100 มีความผันผวนสูงกว่าดัชนี S&P 500 และ NASDAQ Composite และได้รับผลกระทบจากเหตุการณ์ทั่วโลกที่ส่งผลต่อเศรษฐกิจของยุโรป เช่น วิกฤตการเงินในยุโรปในปี 2008 และ Brexit (การออกจากสหภาพยุโรป) ในปี 2016
+
+Nikkei 225 Index (JP) - ^N225:
+
+- รายละเอียด: Nikkei 225 เป็นดัชนีที่วัดผลกระทบของบริษัทใหญ่ที่มีการซื้อขายในตลาดหลักของประเทศญี่ปุ่น
+- การผันผวน: ในช่วง 20 ปีที่กำหนด ดัชนี Nikkei 225 ได้รับผลกระทบจากวิกฤตการเงินในญี่ปุ่นในปี 2008 และโรคติดเชื้อโควิด-19 ในปี 2020 ดัชนีนี้มีความผันผวนสูงและมีการเคลื่อนไหวในระยะเวลาสั้นๆ
+
+Hang Seng Index (HK) - ^HSI:
+
+- รายละเอียด: Hang Seng Index เป็นดัชนีที่วัดผลกระทบของบริษัทใหญ่ในตลาดหลักของฮ่องกง
+- การผันผวน: ดัชนี Hang Seng Index ได้รับผลกระทบจากปัจจัยภายในและภายนอกฮ่องกง รวมถึงเหตุการณ์เศรษฐกิจโลกที่มีผลต่อฮ่องกง
+
+The Stock Exchange of Thailand Index (TH) - ^SET.BK:
+
+- รายละเอียด: ดัชนี The Stock Exchange of Thailand (SET) เป็นดัชนีที่วัดผลกระทบของบริษัทในตลาดหลักของประเทศไทย
+- การผันผวน: ช่วงเวลาดังกล่าวเป็นช่วงที่ตลาดหลักของไทยมีการเติบโตและความผันผวน โดยเฉพาะในช่วงหลังวิกฤตการเงินในยุโรปในปี 2008 และความเสี่ยงทางการเมืองในประเทศ
+
+การผันผวนของดัชนีตลาดในแต่ละประเทศที่ระบุข้างต้นจะได้รับผลกระทบจากปัจจัยต่างๆ เช่น วิกฤตการเงิน โรคระบาด เหตุการณ์ทางเศรษฐกิจ และปัจจัยที่เกี่ยวข้องกับประเทศนั้นๆ ดัชนีตลาดเป็นเครื่องมือที่ใช้ในการวัดและเฝ้าระวังผลกระทบในตลาดหลัก อย่างไรก็ตาม การลงทุนในตลาดหลักต้องพิจารณาหลายปัจจัย ไม่ควรพึ่งพาเพียงแต่ความผันผวนของดัชนีตลาดเพียงอย่างเดียว
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d797e414-abe4-433d-85da-23f877f43864/Untitled.png)
+
+**ตัวอย่าง** **A** : ราคาสูงสุดปัจจุบัน > ราคาสูงสุดวันก่อนหน้า และ ราคาต่ำสุดปัจจุบัน < ราคาต่ำสุดวันก่อนหน้า … ใช้ High-Low ระหว่างแท่งปัจจุบัน เป็น True range
+
+**ตัวอย่าง** **B** : ราคาสูงสุดปัจจุบัน > ราคาสูงสุดวันก่อนหน้า และ ราคาต่ำสุดปัจจุบัน > ราคาต่ำสุดวันก่อนหน้า ให้ใช้ Current High – Previous Close (Absolute value) เป็น True range
+
+**ตัวอย่าง** **C** : ราคาสูงสุดปัจจุบัน < ราคาสูงสุดวันก่อนหน้า และ ราคาต่ำสุดปัจจุบัน < ราคาต่ำสุดวันก่อนหน้า ให้ใช้ Current Low – Previous Close (Absolute value) เป็น True range
+
+**TR (True range)** 
+
+- ขอบเขตของราคาที่มีช่วงกว้างที่สุด
+- ค่าสูงสุดของงวดล่าสุดลบค่าต่ำสุดของงวดล่าสุด
+- ค่าสัมบูรณ์ของค่าสูงสุดของช่วงเวลาล่าสุดลบด้วยค่าปิดก่อนหน้า
+- ค่าสัมบูรณ์ของจุดต่ำสุดของงวดล่าสุดลบด้วยค่าปิดก่อนหน้า
+
+**สูตรการคำนวณ** **TR (True range)**
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9885d055-87e4-4a8e-ada0-296ecc20bb02/Untitled.png)
+
+**ATR (Average true range)**
+
+- เป็นตัวบ่งชี้ความผันผวนของการวิเคราะห์ทางเทคนิคที่พัฒนาโดย J. Welles Wilder
+
+**สูตรการคำนวณ** **ATR (Average true range)**
+
+- เมื่อเราได้ค่า True range แล้ว จากนั้นก็มีเข้าสูตรการคำนวณ ATR โดยปกติจะใช้ค่าเฉลี่ย (Average) อยู่ที่ระดับ 14 วัน ในการคำนวณ
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/48a330a5-7fff-465c-906f-17e6db235d0d/Untitled.png)
+    
+
+Source: https://www.lucid-trader.com/average-true-range-indicator/
+
+Source: https://en.wikipedia.org/wiki/Average_true_range
+
+# 1.Instillation and Import
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0ac14f31-0f09-489c-9087-4da9b57d91ed/Untitled.png)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b7d48a29-6064-49df-873f-8cc4e39de28d/Untitled.png)
+
+# 2.Preparing Data
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f9d711c4-329b-40df-8ea7-60e21e8adb0c/Untitled.png)
+
+Import data จาก Yahoo Finance API เพื่อดาวน์โหลดข้อมูลประวัติย้อนหลัง 20 ปี สำหรับดัชนีตลาดหลักต่างๆจากนั้นจะทำการคำนวณค่าของข้อมูลและสร้าง DataFrame  ด้วยค่าที่คำนวณได้
+
+- กำหนดฟังก์ชัน create_df ที่รับพารามิเตอร์ต่อไปนี้
+- index name เป็น สัญลักษณ์หรือชื่อของดัชนีหรือทรัพย์สิน
+- period (ตัวเลือก): ระยะเวลาที่ใช้คำนวณช่วงเวลาเฉลี่ยจริง ค่าเริ่มต้นคือ 14 วัน
+- start และ end (ตัวเลือก): วันที่เริ่มต้นและสิ้นสุดของข้อมูลประวัติศาสตร์.
+- ในฟังก์ชัน create_df เราจะทำการดาวน์โหลดข้อมูลย้อนหลัง 20 ปี จาก Yahoo Finance ด้วยคำสั่ง download (index_name, start=start, end=end) และเก็บข้อมูลในรูปแบบของ DataFrame
+- จากนั้นจะทำการคำนวณค่าต่างๆ บนข้อมูล และเพิ่มคอลัมน์ใน DataFrame ดังนี้
+- Price_Change: คำนวณการเปลี่ยนแปลงราคาวันละหุ้น
+- Price_Change_Percentage: คำนวณเปอร์เซ็นต์การเปลี่ยนแปลงราคาวันละหุ้น
+- Volume
+- high-low: คำนวณความต่างระหว่างราคาสูงสุดและราคาต่ำสุดในแต่ละวัน
+- high-pc: คำนวณความต่างระหว่างราคาสูงสุดปัจจุบันและราคาปิดก่อนหน้า
+- low-pc: คำนวณความต่างระหว่างราคาต่ำสุดปัจจุบันและราคาปิดก่อนหน้า
+- TR: คำนวณค่า true range โดยเลือกค่าสูงสุดจากค่า high-low, high-pc, low-pc
+- ATR: คำนวณค่า average true range โดยใช้ค่า TR และคำสั่ง .rolling(period).mean() เพื่อคำนวณค่าเฉลี่ยของ TR ในระยะเวลาที่กำหนด
+- ATR_Change: คำนวณการเปลี่ยนแปลงของ ATR
+- ATR_Change_Percentage: คำนวณเปอร์เซ็นต์การเปลี่ยนแปลงของ ATR
+- สุดท้ายฟังก์ชัน create_df จะสร้าง DataFrame ใหม่จากข้อมูลที่คำนวณได้ โดยกำหนดคอลัมน์ที่เกี่ยวข้อง เช่น 'Index', 'Datetime', 'Price', 'Price_Change', 'Price_Change_Percentage', 'Volume', 'Volume_Change', 'Volume_Change_Percentage', 'ATR', 'ATR_Percentage', 'ATR_Change', 'ATR_Change_Percentage'
+- ในส่วนสุดท้ายของโค้ด กำหนดรายชื่อดัชนีและทรัพย์สินต่าง ๆ ที่ต้องการวิเคราะห์ในรูปแบบของลิสต์ index_list
+- จากนั้น จะทำการสร้าง DataFrame สำหรับแต่ละดัชนีโดยใช้ฟังก์ชัน create_df และเก็บ DataFrame เหล่านี้ในลิสต์ dataframes_index_list
+- ใช้ฟังก์ชัน concat() เพื่อรวม DataFrame ทั้งหมดใน `dataframes_index_list
+- 
+
+DATA duration period
+
+Start 2003 - 01 - 01
+
+End   2023 - 06 - 01
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f1fbcb7d-b36d-4254-b963-3d5fcfe92886/Untitled.png)
+
+# 3.Cleaning Data
+
+ทำการ Clean Data-frame ทั้งหมดและโดยหาจากช่วงของวันเดือนปี หรือ บางอย่าง เช่น Datetime เป็นต้น
+
+เรียงลำดับข้อมูลใน DataFrame ตามคอลัมน์ 'Datetime' จากน้อยไปหามาก
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6f85a7bd-9db2-453a-929b-721b1709e272/Untitled.png)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ffc1c0d5-014e-4766-ae4b-0fa8a6c499fd/Untitled.png)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c37d7a11-bae1-4ed3-8ca8-8896b592b848/Untitled.png)
+
+**all_dataframes**
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab765c0b-946a-421d-9633-4f646f3e6e4d/Untitled.png)
+
+Step4#Check null values in each DataFrame of the market indices:
+
+เช็ค ค่าที่ไม่มีข้อมูลในแต่ละ data-frame ของในแต่ละดัชนีตลาด
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cc257108-7704-4501-b87f-e4e422569669/Untitled.png)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f5a93301-1198-4f47-89fc-afa64778ae5b/Untitled.png)
+
+Step4#Drop null values and check null values in each DataFrame of the market indices
+
+ดรอปและเช็คค่าที่ไม่มีข้อมูลในแต่ละ data-frame ของในแต่ละดัชนีตลาด
+
+# 4.Data Visualization
+
+### Data visualization 1: Correlation Heatmap
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/62a478f3-da2d-4200-ab75-b2c10b01b894/Untitled.png)
+
+- Data visualization  : Correlation Heatmap
+้heat map ที่แสดงความสัมพันธ์ในรูปแบบของข้อมูลทั้งหมด ของดัชนีตลาดทั้งหมด6 ตัว ประกอบไปด้วย GSPC(S&P 500 Index), SET.BK(The Stock Exchange of Thailand Index), IXIC(NASDAQ Composite Index), FTSE(FTSE 100 Index), N225(Nikkei 225 Index) และ HIS(Hang Seng Index) โดยเราหาความสัมพันธ์ของราคาปิดในแต่ละวัน กับค่าอื่นๆในชุดข้อมูล
+- insight : จาก กราฟ เราจะเห็นความสัมพันธ์ของราคากับค่าของ ATR ซึ่งเห็นได้ว่า ค่าของ ATR อยู่ที่ 0.84 หรือ ซึ่งมีความสัมพันมากที่สุดกับราคา ซึ่งมีความหมายว่าแนวโน้มของทั้งสองปัจจัยนี้มีแนวโน้มที่ค่อนข้างสูงที่จะไปในทิศทางเดียวกัน ซึ่งค่า ATR สามารถช่วยผู้เทรดหรือนักลงทุนในการช่วยซัพพอตหรือเป็นเหมือนกับเครื่องมือตัวนึงที่ช่วยนักลงทุนในการตัดสินใจลงทุนในสินทรัพย์นั้นๆ
+
+heat map ATR ที่ 70 เปอร์เซ็น ซึ่งแสดงถึงความสัมพันที่ชัดเจนที่สุดคือในเรื่องของราคากับค่าความผันผวน(ATR) ซึ่งมีความหมายว่าแนวโน้มของทั้งสองปัจจัยนี้มีแนวโน้มที่ค่อนข้างสูงที่จะไปในทิศทางเดียวกัน ดังนั้น ผู้เทรดก็สามารถนำค่า ATR มาใช้เป็นปัจจัยในการซื้อขายหลักได้เพื่อให้ได้ราคาที่ต้องการมากที่สุดเพราะในบางกรณี ถ้าเราใช้ปัจจัยในการอย่างเช่น volume การเทรดเป็นปัจจัยหลักเราก็อาจจะเจอความผันผวนที่สูงแต่โดยรวมก็ยังไปในทิศทางเดียวกันอยู่ แต่เมื่อไหร่ก็ตามที่ค่าความผันผวนต่อราคาเข้าใกล้ราคาหรือ -1 มากเท่าไหร่ ปัจจัยนั้นก็จะแสดงความผันพวนที่น้อยลงเช่นกันแต่เป็นในทิศทางตรงกันข้าม
+
+เป็นจัยจัยนึงที่ช่วยใช้ในการวิเคราะ
+//////////////////////////////
+
+_________
 <p align="center">
 Data visualization 2 : Line plot
 </p>
