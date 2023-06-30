@@ -71,11 +71,11 @@ Source: https://en.wikipedia.org/wiki/Average_true_range
 # 1.Instillation and Import
 
 ```
-!pip install pandas seaborn matplotlib numpy yfinance
-#!pip install seaborn
-#!pip install matplotlib
-#!pip install yfinance
-#!pip install numpy
+!pip install seaborn
+!pip install matplotlib
+!pip install yfinance
+!pip install numpy
+```
 ```
 import pandas as pd
 import seaborn as sns
@@ -83,6 +83,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import yfinance as yf
 ```
+
 # 2.Preparing Data
 
 Import data จาก Yahoo Finance API เพื่อดาวน์โหลดข้อมูลประวัติย้อนหลัง 20 ปี สำหรับดัชนีตลาดหลักต่างๆจากนั้นจะทำการคำนวณค่าของข้อมูลและสร้าง DataFrame  ด้วยค่าที่คำนวณได้
