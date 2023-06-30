@@ -43,7 +43,9 @@ The Stock Exchange of Thailand Index (TH) - ^SET.BK:
   
 # Average True Range
 
-- ATR (Average True Range) เป็นตัวบ่งชี้ความผันผวนของการวิเคราะห์ทางเทคนิคที่พัฒนาโดย J. Welles Wilder
+- ATR (Average True Range) เป็นตัวบ่งชี้ความผันผวนของการวิเคราะห์ทางเทคนิคที่พัฒนาโดย J. Welles Wilder ซึ่งเราจะนำมาใช้ในการหาค่าความผันผวนในการศึกษาครั้งนี้
+
+# Calculation
 
 ![Untitled (5)](https://github.com/misterrobot01/market_index_analysis/assets/89926761/edce32a3-5c9c-44af-a390-512068d4430c)
 
@@ -59,6 +61,7 @@ The Stock Exchange of Thailand Index (TH) - ^SET.BK:
 - ค่าสูงสุดของงวดล่าสุดลบค่าต่ำสุดของงวดล่าสุด
 - ค่าสัมบูรณ์ของค่าสูงสุดของช่วงเวลาล่าสุดลบด้วยค่าปิดก่อนหน้า
 - ค่าสัมบูรณ์ของจุดต่ำสุดของงวดล่าสุดลบด้วยค่าปิดก่อนหน้า
+
 
 **สูตรการคำนวณ** **TR (True range)**
 
