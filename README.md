@@ -34,7 +34,8 @@ The Stock Exchange of Thailand Index (TH) - ^SET.BK:
 
 การผันผวนของดัชนีตลาดในแต่ละประเทศที่ระบุข้างต้นจะได้รับผลกระทบจากปัจจัยต่างๆ เช่น วิกฤตการเงิน โรคระบาด เหตุการณ์ทางเศรษฐกิจ และปัจจัยที่เกี่ยวข้องกับประเทศนั้นๆ ดัชนีตลาดเป็นเครื่องมือที่ใช้ในการวัดและเฝ้าระวังผลกระทบในตลาดหลัก อย่างไรก็ตาม การลงทุนในตลาดหลักต้องพิจารณาหลายปัจจัย ไม่ควรพึ่งพาเพียงแต่ความผันผวนของดัชนีตลาดเพียงอย่างเดียว
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d797e414-abe4-433d-85da-23f877f43864/Untitled.png)
+![Untitled (5)](https://github.com/misterrobot01/market_index_analysis/assets/89926761/edce32a3-5c9c-44af-a390-512068d4430c)
+
 
 **ตัวอย่าง** **A** : ราคาสูงสุดปัจจุบัน > ราคาสูงสุดวันก่อนหน้า และ ราคาต่ำสุดปัจจุบัน < ราคาต่ำสุดวันก่อนหน้า … ใช้ High-Low ระหว่างแท่งปัจจุบัน เป็น True range
 
@@ -51,7 +52,8 @@ The Stock Exchange of Thailand Index (TH) - ^SET.BK:
 
 **สูตรการคำนวณ** **TR (True range)**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9885d055-87e4-4a8e-ada0-296ecc20bb02/Untitled.png)
+![Untitled (6)](https://github.com/misterrobot01/market_index_analysis/assets/89926761/c82c1632-7cf3-4350-a353-1937c5adcf47)
+
 
 **ATR (Average true range)**
 
@@ -61,8 +63,8 @@ The Stock Exchange of Thailand Index (TH) - ^SET.BK:
 
 - เมื่อเราได้ค่า True range แล้ว จากนั้นก็มีเข้าสูตรการคำนวณ ATR โดยปกติจะใช้ค่าเฉลี่ย (Average) อยู่ที่ระดับ 14 วัน ในการคำนวณ
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/48a330a5-7fff-465c-906f-17e6db235d0d/Untitled.png)
-    
+![Untitled (7)](https://github.com/misterrobot01/market_index_analysis/assets/89926761/025280bd-3662-4b95-838e-dd3708d8fda0)
+
 
 Source: https://www.lucid-trader.com/average-true-range-indicator/
 
