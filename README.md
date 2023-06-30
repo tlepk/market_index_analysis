@@ -76,8 +76,6 @@ Source: https://en.wikipedia.org/wiki/Average_true_range
 
 # 2.Preparing Data
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f9d711c4-329b-40df-8ea7-60e21e8adb0c/Untitled.png)
-
 Import data จาก Yahoo Finance API เพื่อดาวน์โหลดข้อมูลประวัติย้อนหลัง 20 ปี สำหรับดัชนีตลาดหลักต่างๆจากนั้นจะทำการคำนวณค่าของข้อมูลและสร้าง DataFrame  ด้วยค่าที่คำนวณได้
 ขั้นตอนการสร้าง DataFrame มีดังนี้
 - กำหนดฟังก์ชัน create_df ที่รับพารามิเตอร์ต่อไปนี้
@@ -100,9 +98,48 @@ Import data จาก Yahoo Finance API เพื่อดาวน์โหล�
 - ในส่วนสุดท้ายของโค้ด กำหนดรายชื่อดัชนีและทรัพย์สินต่าง ๆ ที่ต้องการวิเคราะห์ในรูปแบบของลิสต์ index_list
 - จากนั้น จะทำการสร้าง DataFrame สำหรับแต่ละดัชนีโดยใช้ฟังก์ชัน create_df และเก็บ DataFrame เหล่านี้ในลิสต์ dataframes_index_list
 - ใช้ฟังก์ชัน concat() เพื่อรวม DataFrame ทั้งหมดใน `dataframes_index_list
+```
+def create_df(index_name, period=14, start='2003-01-20', end='2023-06-20'):
+    data = yf.download(index_name, start=start, end=end)
+    data['Price_Change'] = data['Close'].diff()
+    data['Price_Change_Percentage'] = data['Price_Change'] / data['Close'].shift(1) * 100
+    data['high-low'] = data['High'] - data['Low']
+    data['high-pc'] = abs(data['High'] - data['Close'].shift(1))
+    data['low-pc'] = abs(data['Low'] - data['Close'].shift(1))
+    TR = data[['high-low', 'high-pc', 'low-pc']].max(axis=1)
+    ATR = TR.rolling(period).mean()
+    data['ATR_Change'] = ATR.diff()
+    data['ATR_Change_Percentage'] = data['ATR_Change'] / ATR.shift(1) * 100
+    result = pd.DataFrame({
+        'Index': index_name,
+        'Datetime': data.index,
+        'Price': data['Close'],
+        'Price_Change': data['Price_Change'],
+        'Price_Change_Percentage': data['Price_Change_Percentage'],
+        'Volume': data['Volume'],
+        'ATR': ATR,
+        'ATR_Percentage': ATR / data['Close'] * 100,
+        'ATR_Change': data['ATR_Change'],
+        'ATR_Change_Percentage': data['ATR_Change_Percentage']})
+    return result
+
+index_list = [
+    ('^GSPC', 'S&P 500 Index (US)'),
+    ('^IXIC', 'NASDAQ Composite Index (US)'),
+    ('^FTSE', 'FTSE 100 Index (EU)'),
+    ('^N225', 'Nikkei 225 Index (JP)'),
+    ('^HSI', 'Hang Seng Index (HK)'),
+    ('^SET.BK', 'The Stock Exchange of Thailand Index (TH)')]
 
 
+dataframes_index_list = [create_df(index[0]) for index in index_list]
+
+all_dataframes = pd.concat(dataframes_index_list)
+all_dataframes.info()
+all_dataframes
+```
 # 3.Cleaning Data
+ทำการ Clean Dataframe ทั้งหมดและลบค่า Null ออกจาก DataFrame เรียงลำดับข้อมูลใน DataFrame ตามคอลัมน์ 'Datetime' จากน้อยไปหามาก
 ```
 all_dataframes.info()
 all_dataframes.isna().sum()
@@ -135,6 +172,7 @@ for i in range(len(dataframes_index_list)):
   print(dataframes_index_list[i].isna().sum())
   print(dataframes_index_list[i].info())
 ```
+![Untitled (4)](https://github.com/misterrobot01/test/assets/89926761/1b8ba3b2-69c1-40f5-ab2a-ab210392f9b6)
 
 
 # 4.Data Visualization
