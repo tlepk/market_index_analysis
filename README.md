@@ -103,6 +103,38 @@ Import data จาก Yahoo Finance API เพื่อดาวน์โหล�
 
 
 # 3.Cleaning Data
+```
+all_dataframes.info()
+all_dataframes.isna().sum()
+```
+![Untitled](https://github.com/misterrobot01/test/assets/89926761/c7057455-b1c7-4e9c-ae6a-cfbab3e11735)
+
+```
+all_dataframes = all_dataframes.sort_values(by='Datetime', ascending=True)
+all_dataframes = all_dataframes.dropna()
+all_dataframes.info()
+all_dataframes.isna().sum()
+```
+![Untitled (1)](https://github.com/misterrobot01/test/assets/89926761/4f4e5c9d-6236-44d5-8bf2-669386fce439)
+
+```
+all_dataframes
+```
+![Untitled (2)](https://github.com/misterrobot01/test/assets/89926761/29ca3fae-08fa-4e0a-b23a-da19a77b1258)
+
+```
+for i in range(len(dataframes_index_list)):
+  print(dataframes_index_list[i].isna().sum())
+```
+![Untitled (3)](https://github.com/misterrobot01/test/assets/89926761/107602ee-2887-41a6-a6b3-ea33fdee3e87)
+
+```
+for i in range(len(dataframes_index_list)):
+  dataframes_index_list[i].dropna(inplace=True)
+  print(index_list[i])
+  print(dataframes_index_list[i].isna().sum())
+  print(dataframes_index_list[i].info())
+```
 
 
 # 4.Data Visualization
