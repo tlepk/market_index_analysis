@@ -307,3 +307,4 @@ Data visualization 3.2: Distribution of ATR percentage for market indices
 Data visualization 4: Market neutral - Pie Chart (Tle)
 
 - เปรียบเทียบสัดส่วนของข้อมูลที่อยู่ในช่วง -1sd ถึง 1sd กับ ช่วงที่อยู่นอก -1sd ถึง 1sd
+![image](https://github.com/misterrobot01/test/assets/89926761/a526d97e-8b59-4acf-9902-0ce4286122fb)
